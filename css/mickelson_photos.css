@@ -1,0 +1,126 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	margin-top: 45px;
+}
+
+.nav_bar {
+  	overflow: hidden;
+  	background-color: #E9E7D1;
+  	position: fixed;
+  	top: 0;
+  	height: 90px;
+  	width: 100%;
+  	z-index: 99;
+  	box-shadow: 0 0 0 5px black;
+}
+
+.nav_bar a {
+  	float: right;
+  	display: block;
+  	font-family: "Courier New";
+  	font-size: 40pt;
+  	color: black;
+  	text-align: left;
+  	padding: 20px 100px 20px 20px;
+  	text-decoration: none;
+}
+
+.nav_bar a:hover {
+  	background-color: black;
+  	color: #E9E7D1;
+  	cursor: pointer;
+}
+
+.page-content {
+	flex: 1 0 auto;
+}
+
+@keyframes hero_move {
+	50% {scale: 1.2 1.2;}
+	
+}
+
+.hero {
+	animation: hero_move 20s;
+}
+
+.hero {
+  background-image: url(../images/fam_background.jpeg);
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@keyframes dedication_fade {
+	0% { opacity: 0;}
+	50% {opacity: .25;}
+	100% {opacity: 1;}
+	
+}
+
+.dedication {
+ 	font-family: "Courier New";
+ 	font-size: 30pt;
+ 	color: black;
+  	text-align: left;
+  	padding: 0px 25px 50px 600px;
+  	text-shadow: 2px 2px 8px white;
+  	position: absolute;
+  	top: 400px;
+  	animation: dedication_fade 7s;
+  	animation-timing-function: ease-in;
+  	animation-delay: -1s;
+}
+
+@keyframes image_move {
+  50% {rotate: y 180deg;}
+}
+
+.image {
+	display: inline-block;
+	position: absolute;
+	top: 1220px;
+	left: 20px;
+	animation: image_move 5s;
+}
+
+.info {
+	width: 700px;
+	font-family: "Courier New";
+	font-size: 30pt;
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	top: 1400px;
+	left: 700px;
+}
+	
+.footer {
+	padding: 50px;
+	font-family: "Courier New";
+	font-size: 20pt;
+  	text-align: center;
+  	line-height: 30pt;
+  	background-color: #E9E7D1;
+  	box-shadow: 0 0 0 5px black;
+}
+.footer a {
+  	text-decoration: none;
+  	text-align: center;
+  	color: black;
+}
+.footer a:hover {
+  	background-color: black;
+  	color: #E9E7D1;
+}
+
+footer {
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	top: 2300px;
+}

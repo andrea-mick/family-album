@@ -1,0 +1,114 @@
+html,body {
+	height: 100%;
+	width: 100%;
+    background: #E9E7D1;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.nav_bar {
+  	overflow: hidden;
+  	background-color: #E9E7D1;
+  	position: fixed;
+  	height: 90px;
+  	width: 100%;
+  	z-index: 99;
+  	box-shadow: 0 0 0 5px black;
+}
+
+.nav_bar a {
+  	float: right;
+  	display: block;
+  	font-family: "Courier New";
+  	font-size: 40pt;
+  	color: black;
+  	text-align: left;
+  	padding: 20px 100px 20px 20px;
+  	text-decoration: none;
+}
+
+.nav_bar a:hover {
+  	background-color: black;
+  	color: #E9E7D1;
+  	cursor: pointer;
+}
+
+.top {
+	background-color: black;
+	width: 100%;
+	height: 90px;
+}
+		
+div.gallery {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+div.gallery:hover {
+  border: 2px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: left;
+  font-family: "Courier";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	top: 2800px;
+}
+	.footer {
+	padding: 50px;
+	font-family: "Courier New";
+	font-size: 20pt;
+  	text-align: center;
+  	line-height: 30pt;
+  	background-color: #E9E7D1;
+  	box-shadow: 0 0 0 5px black;
+}
+  	.footer a {
+  	text-decoration: none;
+  	text-align: center;
+  	color: black;
+}
+	.footer a:hover {
+  	background-color: black;
+  	color: #E9E7D1;
+}
